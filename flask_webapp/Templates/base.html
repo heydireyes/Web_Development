@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+<title>Company Data</title>
+
+</head>
+
+<style>
+
+* {
+  font-family: 'Times New Roman', Times, serif;
+  
+}
+
+h1 {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            height: 10vh; 
+            margin: 0; 
+            font-size: 50px;
+        }
+
+nav {
+  width: 100%;
+  height: 60px;
+  background-color: white;
+}
+
+nav p {
+        font-family: 'Times New Roman', Times, serif; 
+        color: #222;
+        font-size: 24px;
+        line-height: 55px;
+        float: left;
+        padding: 0px 20px;
+       
+
+}
+
+nav ul {
+    float: left;
+   
+}
+
+nav ul li {
+    float: left;
+    list-style: none;
+    position: relative;
+    
+}
+
+nav ul li a { 
+  display: block;
+  font-family: 'Times New Roman', Times, serif; 
+  color: #222;
+  font-size: 18px;
+  padding: 16px 12px;
+  text-decoration: none;
+ 
+}
+
+nav ul li:hover ul { 
+  display: block;
+ 
+}
+
+nav ul li ul li a { 
+    width: 200px;
+    text-align: center;
+   
+
+}
+
+nav ul li ul li a:hover {
+      background-color: #ebedef;
+
+} 
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: white;
+  padding: 10px;
+  max-height: 500px;
+  overflow-y: auto; 
+  border: none;
+ 
+}
+
+
+
+</style>
+
+
+<body>
+<nav>
+    <p>DragonScale Ventures</p>
+
+  <ul>
+    <li><a href="/">Company</a>
+      <ul class="dropdown-menu"> 
+        <li><a href="/aanikabiosciences">Aanika Biosciences</a></li>
+        <li><a href="/aavrani">AAVRANI</a></li>
+        <li><a href="/acquicent">Acquicent</a></li>
+        <li><a href="/adarzabiosystems">Adarza Biosystems, Inc.</a></li>
+        <li><a href="/advancedmicrobubbles">Advanced Microbubbles</a></li>
+        <li><a href="/aetherbiomachines">Aether Biomachines</a></li>
+        <li><a href="/aetherdiamonds">Aether Diamonds</a></li>
+        <li><a href="/akadeumlifesciences">Akadeum Life Sciences, Inc.</a></li>
+        <li><a href="/akashsystems">Akash Systems</a></li>
+        <li><a href="/altopharmacy">Alto Pharmacy</a></li>
+        <li><a href="/altoira">AltoIRA</a></li>
+        <li><a href="/americangenetechnologies">American Gene Technologies</a></li>
+        <li><a href="/an2therapeutics">AN2 Therapeutics</a></li>
+        <li><a href="/angellist">AngelList</a></li>
+        <li><a href="/angellistsyndicate">Angellist Syndicate for AngelPad #6</a></li>
+        <li><a href="/anthropic">Anthropic</a></li>
+        <li><a href="/anymod">AnyMod</a></li>
+        <li><a href="/interlock">Interlock (Apozy)</a></li>
+        <li><a href="/appbind">AppBind</a></li>
+        <li><a href="/artie">Artie</a></li>
+        <li><a href="/ashwellness">Ash Wellness</a></li>
+        <li><a href="/ashvatthatherapeutics">Ashvattha Therapeutics, Inc.</a></li>
+        <li><a href="/astranisspacetechnologies">Astranis Space Technologies</a></li>
+        <li><a href="/attivare">Attivare</a></li>
+        <li><a href="/audigent">Audigent</a></li>
+        <li><a href="/axiomspace">Axiom Space</a></li>
+        <li><a href="/betr">Betr</a></li>
+        <li><a href="/better">Better</a></li>
+        <li><a href="/bitvore">Bitvore</a></li>
+        <li><a href="/blacksharkai">Blackshark.ai</a></li>
+        <li><a href="/blingfinancial">Bling Financial</a></li>
+      <!--  <li><a href="/blueberrypediatrics">Blueberry Pediatrics</a></li>
+        <li><a href="/branch">Branch</a></li>
+        <li><a href="/brewbotz">Brewbotz</a></li>
+        <li><a href="/brex">Brex</a></li>
+        <li><a href="/brilliantsmarthome">Brilliant Smart Home</a></li>
+        <li><a href="/briohr">BrioHR</a></li>
+        <li><a href="/carbonhealth">Carbon Health</a></li>
+        <li><a href="/cerebrassystems">Cerebras Systems</a></li>
+        <li><a href="/chai">Chai</a></li>
+        <li><a href="/coeliuscapitalrollingfund">Coelius Capital Rolling Fund</a></li>
+        <li><a href="/cognitivespace">Cognitive Space</a></li>
+        <li><a href="/corelight">Corelight</a></li>
+        <li><a href="/cubii">Cubii</a></li>
+        <li><a href="/dmatrix">d Matrix</a></li>
+        <li><a href="/dapi">Dapi</a></li>
+        <li><a href="/darklang">Darklang</a></li>
+        <li><a href="/deice">De-Ice</a></li>
+        <li><a href="/dnablock">DNABLOCK</a></li>
+        <li><a href="/dnovobio">dNovo Bio</a></li>
+        <li><a href="/doorvest">Doorvest</a></li>
+        <li><a href="/droplette">Droplette</a></li>
+        <li><a href="/eigentherapeutics">Eigen Therapeutics</a></li>
+        <li><a href="/emberfund">Ember Fund</a></li>
+        <li><a href="/epicgames">Epic Games</a></li>
+        <li><a href="/epinoma">Epinoma</a></li>
+        <li><a href="/eve">Eve</a></li>
+        <li><a href="/falcomm">Falcomm</a></li>
+        <li><a href="/feeltherapeutics">Feel Therapeutics</a></li>
+        <li><a href="/finlessfoods">Finless Foods</a></li>
+        <li><a href="/firefliesai">Fireflies.ai</a></li>
+        <li><a href="/forta">FORTA</a></li>
+        <li><a href="/fretello">Fretello</a></li>
+        <li><a href="/friz">Friz</a></li>
+        <li><a href="/frostmethanelabs">Frost Methane Labs</a></li>
+        <li><a href="/gauge">Gauge</a></li>
+        <li><a href="/genies">Genies</a></li>
+        <li><a href="/gist">GIST</a></li>
+        <li><a href="/glyde">Glyde</a></li>
+        <li><a href="/gocarsubscription">GO Car Subscription</a></li>
+        <li><a href="/gpuaudio">GPU AUDIO</a></li>
+        <li><a href="/h3xtechnologies">H3X Technologies</a></li>
+        <li><a href="/helicityspace">Helicity Space</a></li>
+        <li><a href="/here">Here</a></li>
+        <li><a href="/hint">Hint, Inc.</a></li>
+        <li><a href="/humanlongevity">Human Longevity, Inc.</a></li>
+        <li><a href="/hypersonix">Hypersonix</a></li>
+        <li><a href="/ingeltherapeutics">InGel Therapeutics</a></li>
+        <li><a href="/insomabio">inSoma Bio</a></li>
+        <li><a href="/inspectify">Inspectify</a></li>
+        <li><a href="/ionpath">IonPath</a></li>
+        <li><a href="/ipinovyxbio">IpiNovyx Bio</a></li>
+        <li><a href="/kalendarai">Kalendar AI</a></li>
+        <li><a href="/kasheesh">Kasheesh</a></li>
+        <li><a href="/kernalbiologics">Kernal Biologics</a></li>
+        <li><a href="/keys">Keys</a></li>
+        <li><a href="/koniku">Koniku</a></li>
+        <li><a href="/lendtable">Lendtable</a></li>
+        <li><a href="/level">Level</a></li>
+        <li><a href="/ligandal">Ligandal</a></li>
+        <li><a href="/lively">Lively, Inc.</a></li>
+        <li><a href="/locusbiosciences">Locus Biosciences, Inc.</a></li>
+        <li><a href="/loomai">Loom.ai</a></li>
+        <li><a href="/loop">Loop</a></li>
+        <li><a href="/lvl">LVL</a></li>
+        <li><a href="/mdinsider">MD Insider</a></li>
+        <li><a href="/metadata">Metadata</a></li>
+        <li><a href="/mgrana">mGrana</a></li>
+        <li><a href="/miles">Miles</a></li>
+        <li><a href="/modularit">Modulari-T</a></li>
+        <li><a href="/molekule">Molekule</a></li>
+        <li><a href="/mozart">Mozart</a></li>
+        <li><a href="/mudwtr">MUD\WTR</a></li>
+        <li><a href="/mycars">MyCars</a></li>
+        <li><a href="/mycroftai">Mycroft AI Inc.</a></li>
+        <li><a href="/mythicalgames">Mythical Games</a></li>
+        <li><a href="/nanonets">Nanonets</a></li>
+        <li><a href="/naytev">Naytev</a></li>
+        <li><a href="/noah">Noah & Co.</a></li>
+        <li><a href="/nopsec">Nopsec</a></li>
+        <li><a href="/nourishtechnology">Nourish Technology, Inc.</a></li>
+        <li><a href="/numetric">Numetric</a></li>
+        <li><a href="/nutrisense">NutriSense</a></li>
+        <li><a href="/obviouslyai">Obviously AI</a></li>
+        <li><a href="/ocient">Ocient</a></li>
+        <li><a href="/omaze">Omaze</a></li>
+        <li><a href="/oneroof">OneRoof</a></li>
+        <li><a href="/onrampinvest">Onramp Invest</a></li>
+        <li><a href="/openprise">Openprise</a></li>
+        <li><a href="/ople">Ople</a></li>
+        <li><a href="/orbitfab">Orbit Fab</a></li>
+        <li><a href="/orphidia">Orphidia, Inc.</a></li>
+        <li><a href="/otisai">Otis AI</a></li>
+        <li><a href="/ottertune">OtterTune</a></li>
+        <li><a href="/pacaso">Pacaso</a></li>
+        <li><a href="/paga">Paga</a></li>
+        <li><a href="/peopleai">People.ai</a></li>
+        <li><a href="/phoenixmoleculardesigns">Phoenix Molecular Designs</a></li>
+        <li><a href="/pipefy">Pipefy</a></li>
+        <li><a href="/plantiq">PlantiQ</a></li>
+        <li><a href="/prenav">PRENAV</a></li>
+        <li><a href="/promakhostherapeutics">Promakhos Therapeutics</a></li>
+        <li><a href="/radishhealth">Radish Health</a></li>
+        <li><a href="/rainneuromophics">Rain Neuromophics</a></li>
+        <li><a href="/rationalvaccines">Rational Vaccines</a></li>
+        <li><a href="/raydiant">Raydiant</a></li>
+        <li><a href="/resonadolabs">Resonado Labs</a></li>
+        <li><a href="/ringmd">RingMD</a></li>
+        <li><a href="/rnav8bio">RNAV8 Bio</a></li>
+        <li><a href="/row64">Row64</a></li>
+        <li><a href="/seated">Seated</a></li>
+        <li><a href="/sendhub">SendHub</a></li>
+        <li><a href="/sense">Sense</a></li>
+        <li><a href="/shapesxr">ShapesXR</a></li>
+        <li><a href="/shiplyst">Shiplyst</a></li>
+        <li><a href="/snack">Snack</a></li>
+        <li><a href="/songclip">Songclip</a></li>
+        <li><a href="/sourse">Sourse Inc.</a></li>
+        <li><a href="/sparkneuro">SPARK Neuro</a></li>
+        <li><a href="/stormx">StormX</a></li>
+        <li><a href="/studio">STUDIO</a></li>
+        <li><a href="/superplastic">Superplastic</a></li>
+        <li><a href="/superworld">SuperWorld</a></li>
+        <li><a href="/tablelist">Tablelist</a></li>
+        <li><a href="/ten63therapeutics">Ten63 Therapeutics</a></li>
+        <li><a href="/tenzrhealth">TENZR Health</a></li>
+        <li><a href="/testai">Test.ai</a></li>
+        <li><a href="/threatquotient">Threat Quotient</a></li>
+        <li><a href="/treau">Treau</a></li>
+        <li><a href="/triller">Triller</a></li>
+        <li><a href="/triplemint">Triplemint</a></li>
+        <li><a href="/umake">uMake</a></li>
+        <li><a href="/umbra">Umbra</a></li>
+        <li><a href="/unspun">Unspun</a></li>
+        <li><a href="/urbanstems">UrbanStems</a></li>
+        <li><a href="/varobank">Varo Bank</a></li>
+        <li><a href="/velocitymobile">Velocity Mobile</a></li>
+        <li><a href="/venostent">VenoStent, Inc.</a></li>
+        <li><a href="/venusaerospace">Venus Aerospace</a></li>
+        <li><a href="/waev">Waev</a></li>
+        <li><a href="/wallarooai">Wallaroo.AI</a></li>
+        <li><a href="/wavebl">WAVE BL</a></li>
+        <li><a href="/wevorce">Wevorce</a></li>
+        <li><a href="/workorder">Workorder</a></li>
+        <li><a href="/yumi">Yumi</a></li>
+        <li><a href="/yummy">Yummy</a></li>
+        <li><a href="/zainar">Zainar</a></li>
+        <li><a href="/zeotap">Zeotap</a></li>-->
+      </ul>
+    </li>
+   
+  </ul>
+
+</nav>  
+
+
+
+
+</body>
+
+
+{% block content %}
+{% endblock %}
+
+
+ 
+
+  <script type="text/javascript">
+    function deleteNote(noteId) {
+fetch("/delete-note", {
+  method: "POST",
+  body: JSON.stringify({ noteId: noteId }),
+}).then((_res) => {
+  window.location.href = "/";
+});
+}
+</script>
+
+</body>
+
+</html>
+
+

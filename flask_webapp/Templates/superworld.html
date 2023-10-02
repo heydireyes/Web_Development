@@ -1,0 +1,219 @@
+{% extends "base.html" %} {% block title %} SuperWorld Webpage {% endblock %} {% block 
+    content %}
+
+    <style>
+
+        .center {
+    
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+        }
+        
+    
+        h2 {
+            text-align: center;
+            font-size: 35px;
+        
+        }
+    
+        
+    
+        h3 {text-align: center;
+            font-size: 40px;
+            color: white;
+        
+        }
+    
+        h4 {
+            text-align: center;
+            font-size: 70px;
+            margin: 15px 20px 22px 0;
+            
+        }
+        
+        .news-table {
+            display: flex;
+            text-align: center;
+            width: 100%;
+            margin-left: 70px;
+            margin-right: 0px;
+            
+        }
+        
+        h5 {
+            text-align: center;
+            font-size: 50px;
+          
+        }
+    
+    
+        h6 {
+            text-align: center;
+            font-size: 40px;
+        
+        }
+    
+    
+        .news-title {
+            font-size: 18px;
+            color: white;
+            text-decoration: none;
+            margin-bottom: 5px;
+            text-overflow: ellipsis;
+        }
+        
+        .news-date {
+            font-size: 12px;
+            color: white; 
+        }
+    
+        .table-container {
+            background-color: #212f3c;
+            color: white;
+            padding: 20px;
+            max-height: 500px; 
+            overflow-y: auto; 
+           
+    
+        }
+        
+        .news-table {
+            width: 100%; 
+            border-collapse: collapse;
+        }
+        
+        .news-cell {
+            padding: 10px;
+            border: 1px solid #212f3d;
+            text-align: left;
+        
+        }
+    
+    
+        .header {
+            margin-bottom: 30px;
+            background-color: #dfe3e8;
+            text-align: center;
+        
+        }
+    
+        .news-section {
+            padding: 40px;
+            margin-bottom: 15px;
+            background-color: #212f3c;
+          
+    
+        }
+    
+    
+    body {
+            background-color: #dfe3e8;
+        }
+    
+    .section {
+            padding: 40px;
+            border-bottom: 1px solid #ccc;
+            text-align: center; 
+            align-content: center;
+        }
+        
+    .info-container {
+            display: flex;
+            flex-direction: row;
+            margin: 0px 300px;
+            margin-top: 20px; 
+        }
+        
+    .info {
+            margin-bottom: 10px; 
+        }
+        
+    .vertical {
+            border-left: 1px solid black;
+            height: 23px;
+            margin: 0 10px; 
+            display: inline-block;
+            text-align: center;
+        }
+    
+        .center-content {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    
+    
+    
+     </style>   
+    
+    <header class="header">
+    <h4>SuperWorld</h4>
+               
+    <img src="https://pbs.twimg.com/profile_banners/1340530952863436800/1666625442/1500x500" alt="Sense Finance"style="width:1150px;height:350px;" class="center">
+    
+    </header>
+    
+    <main>
+        <section class="section">
+        <h6>  Overview </h6>
+       
+       <div class="info-container">
+    
+            <p class="info"> <b> Employee Count:</b> 7 Employees </p>  
+            <div class="vertical"></div>
+    
+            
+                
+            <p <div class="info"> <b>Market: </b> Cryptocurrency / Blockchain </p> 
+            <div class="vertical"></div>
+            
+    
+            <p <div class="info"> <b>Location: </b> San Francisco, California </p>
+            <div class="vertical"></div>
+    
+            <p <div class="info"> Sense Finance is currently hiring for a Product Designer</p>
+            
+    
+        </div>
+        </section>
+    
+    
+    <div class="news-section">
+     <h3>Latest News</h3>
+       
+            <div class="table-container">
+                <table class="news-table">
+                    <tbody>
+                        {% for item in data %}
+                            <tr>
+                                <td class="news-cell">
+                                    <a class="news-title" href="{{ item.Link }}" target="blank"> {{ item.Title }} </a>
+                                    <p class="news-date">Posted on: {{ item.Date }}</p>
+                                </td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        
+    </div>
+    
+    <section class="social-section">
+    <div class="center-content">
+        <h6>Social Buzz</h6>
+        
+        <a class="twitter-timeline" data-width= "1300" data-height="1200"data-theme="dark" href="https://twitter.com/senseprotocol?ref_src=twsrc%5Etfw">Tweets by Sense Finance</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+    </section>
+    
+
+    </main>   
+    </html>
+    
+    {% endblock %}
+    
+    

@@ -1,0 +1,241 @@
+{% extends "base.html" %} {% block title %} Advanced Microbubbles Webpage {% endblock %} {% block 
+    content %}
+
+    <style>
+
+        .center {
+    
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+        }
+        
+    
+        h2 {
+            text-align: center;
+            font-size: 35px;
+        
+        }
+    
+        
+    
+        h3 {text-align: center;
+            font-size: 40px;
+            color: white;
+        
+        }
+    
+        h4 {
+            text-align: center;
+            font-size: 55px;
+            margin: 15px 20px 22px 0;
+            
+        }
+        
+        .news-table {
+            display: flex;
+            text-align: center;
+            width: 100%;
+            margin-left: 70px;
+            margin-right: 0px;
+            
+        }
+        
+        h5 {
+            text-align: center;
+            font-size: 50px;
+          
+        }
+    
+    
+        h6 {
+            text-align: center;
+            font-size: 40px;
+        
+        }
+    
+    
+        .news-title {
+            font-size: 18px;
+            color: white;
+            text-decoration: none;
+            margin-bottom: 5px;
+            text-overflow: ellipsis;
+        }
+        
+        .news-date {
+            font-size: 12px;
+            color: white; 
+        }
+    
+        .table-container {
+            background-color: #212f3c;
+            color: white;
+            padding: 20px;
+            max-height: 500px; 
+            overflow-y: auto; 
+           
+    
+        }
+        
+        .news-table {
+            width: 100%; 
+            border-collapse: collapse;
+        }
+        
+        .news-cell {
+            padding: 10px;
+            border: 1px solid #212f3d;
+            text-align: left;
+        
+        }
+    
+    
+        .header {
+            margin-bottom: 30px;
+            background-color: #dfe3e8;
+            text-align: center;
+        
+        }
+    
+        .news-section {
+            padding: 40px;
+            margin-bottom: 15px;
+            background-color: #212f3c;
+          
+    
+        }
+    
+    
+    body {
+            background-color: #dfe3e8;
+        }
+    
+    .section {
+            padding: 20px;
+            border-bottom: 1px solid #ccc;
+            text-align: center; 
+            align-content: center;
+           
+        }
+        
+        .info-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-top: 20px; 
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+    .info {
+            margin-bottom: 10px; 
+            margin: 20px 20px 20px 20px;
+        }
+        
+    .vertical {
+            border-left: 1px solid black;
+            height: 23px;
+            margin: 20px; 
+            display: inline-block;
+            text-align: center;
+        }
+    
+        .center-content {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+        }
+    .no-news {
+        font-size: 22px;
+        text-align: center;
+        }
+        
+    
+    
+    
+     </style>   
+    
+    <header class="header">
+    <h4><img src="https://res.cloudinary.com/hlsr7ls49/image/upload/v1601133957/tjuml7n8cm5t2btwsy2w.png" alt="Advanced Microbubbles" style="width:400px;height:85px; padding: 5px;" class="center">
+    </h4>
+  
+    <img src="https://www.advancedmicrobubbles.com/uploads/2/8/0/7/28075813/home-page2_orig.png" alt="Advanced Microbubbles2" style="width:639px;height:276px; padding: 5px;" class="center">
+
+    <main>
+        <section class="section">
+        <h6>  Overview </h6>
+       
+       <div class="info-container">
+    
+            <p class="info"> <b> Employee Count:</b> 1 Employee </p>  
+            <div class="vertical"></div>
+    
+            
+                
+            <p <div class="info"> <b>Market: </b> Medical Devices </p> 
+            <div class="vertical"></div>
+            
+    
+            <p <div class="info"> <b>Location: </b> Newark, California </p>
+            <div class="vertical"></div>
+    
+            <p <div class="info"> Advanced Microbubbles utilizes ultrasound triggered microbubbles to solve cancer drug delivery.</p>
+            
+    
+        </div>
+        </section>
+    
+    
+        <div class="news-section">
+            <h3>Latest News</h3>
+               
+            <div class="table-container">
+                <table class="news-table">
+                    <tbody>
+                        <u>
+                        {% for item in data %}
+                            <tr>
+                                <td class="news-cell">
+                                    <a class="news-title" href="{{ item.Link }}" target="blank"> {{ item.Title }} </a>
+                                    <p class="news-date">Posted on: {{ item.Date }}</p>
+                                </td>
+                            </tr>
+                        {% endfor %}
+                        </u>
+                        {% if data %}
+                        {% else %}
+                            <tr>
+                                <td colspan="2">
+                                    <p class="no-news">No news articles published at this time.</p>
+                                </td>
+                            </tr>
+                        {% endif %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+    
+    <section class="social-section">
+    <div class="center-content">
+        <h6>Social Buzz</h6>
+        
+        <a class="twitter-timeline" data-width= "1150" data-height="2000"data-theme="dark" href="https://twitter.com/advmicrobubbles?ref_src=twsrc%5Etfw">Tweets by Advanced Microbubbles</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <br>
+    </br>
+    </div>
+
+    </section>
+    
+
+    </main>   
+    </html>
+    
+    {% endblock %}
+    
+    
